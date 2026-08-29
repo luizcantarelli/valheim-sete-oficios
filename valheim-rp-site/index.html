@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Compêndio operacional dos Sete Ofícios: monopólios, produtos, projetos e leis.">
+  <title>Os Sete Ofícios · Compêndio</title>
+  <link rel="stylesheet" href="styles.css?v=20260828-storvirki">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#top"><span>ᚢ</span><b>OS SETE OFÍCIOS</b><small>COMPÊNDIO DE CAMPO</small></a>
+    <nav>
+      <a href="#governo">STÓRVIRKI & LÖGÞING</a>
+      <a class="download" href="../fichas-sistemas/registro-de-projetos.pdf">REGISTRO STÓRVIRKI</a>
+      <a class="download" href="../fichas-sistemas/registro-de-leis.pdf">REGISTRO LÖGÞING</a>
+    </nav>
+  </header>
+
+  <div class="command" id="top">
+    <aside class="role-rail" aria-label="Profissões">
+      <p class="rail-title">SELECIONE O OFÍCIO</p>
+      <div id="role-list"></div>
+    </aside>
+    <main class="workspace">
+      <section id="profession-panel" aria-live="polite"></section>
+
+      <section class="governance" id="governo">
+        <div class="section-kicker">GOVERNO DA SESSÃO</div>
+        <div class="systems-grid">
+          <article class="system-card project-card">
+            <div><span>01</span><h2>STÓRVIRKI <small>GRANDES EMPREITADAS</small></h2></div>
+            <p>“Grandes feitos” dignos de uma saga. A proposta é votada; o vencedor reina temporariamente; a maioria julga o resultado; sucesso concede mesa ou melhoria.</p>
+            <ol><li>Propor</li><li>Votar</li><li>Reinar</li><li>Executar</li><li>Julgar</li></ol>
+            <div class="system-actions">
+              <a href="#recompensas">VER AS 20 RECOMPENSAS ↓</a>
+              <a href="../fichas-sistemas/registro-de-projetos.pdf">ABRIR REGISTRO INTERATIVO →</a>
+            </div>
+          </article>
+          <article class="system-card law-card">
+            <div><span>02</span><h2>LÖGÞING <small>ASSEMBLEIA DAS LEIS</small></h2></div>
+            <p>O conselho em que a tribo declara suas regras. Propostas aprovadas vigoram até o fim do dia; então tornam-se permanentes ou são excluídas.</p>
+            <ol><li>Propor</li><li>Votar</li><li>Vigorar</li><li>Reavaliar</li><li>Fixar</li></ol>
+            <a href="../fichas-sistemas/registro-de-leis.pdf">ABRIR REGISTRO INTERATIVO →</a>
+          </article>
+        </div>
+        <section class="reward-catalog" id="recompensas" aria-labelledby="reward-title">
+          <header class="reward-head">
+            <div>
+              <p>RECOMPENSA DE UM STÓRVIRKI CONCLUÍDO</p>
+              <h2 id="reward-title">O ARSENAL DA TRIBO</h2>
+            </div>
+            <p>Após o julgamento de sucesso, o proponente escolhe <b>uma mesa, uma melhoria de mesa ou um equipamento</b> que já esteja ao alcance tecnológico da tribo. O vencedor torna-se seu proprietário e decide como usar, alugar ou vender o acesso.</p>
+          </header>
+
+          <div class="reward-grid">
+            <article class="reward-group reward-upgrades">
+              <header><span>01</span><div><h3>MESAS APRIMORÁVEIS</h3><p>A recompensa pode ser a mesa ou um de seus upgrades.</p></div></header>
+              <ul class="reward-items">
+                <li><b>Forge</b><small>Mesa ou melhoria</small></li>
+                <li><b>Black Forge</b><small>Mesa ou melhoria</small></li>
+                <li><b>Galdr Table</b><small>Mesa ou melhoria</small></li>
+                <li><b>Cauldron</b><small>Mesa ou melhoria</small></li>
+                <li><b>Artisan Table</b><small>Mesa ou melhoria</small></li>
+              </ul>
+            </article>
+
+            <article class="reward-group reward-stations">
+              <header><span>02</span><div><h3>ESTAÇÕES PRODUTIVAS</h3><p>Infraestrutura que abre novos ciclos de produção.</p></div></header>
+              <ul class="reward-items">
+                <li><b>Fermenter</b><small>Fermentação</small></li>
+                <li><b>Spinning Wheel</b><small>Fiação</small></li>
+                <li><b>Windmill</b><small>Moagem</small></li>
+                <li><b>Charcoal Kiln</b><small>Carvão</small></li>
+                <li><b>Wisp Fountain</b><small>Wisps</small></li>
+                <li><b>Blast Furnace</b><small>Fundição avançada</small></li>
+                <li><b>Eitr Refinery</b><small>Eitr refinado</small></li>
+                <li><b>Smelter</b><small>Fundição</small></li>
+                <li><b>Stonecutter</b><small>Construção em pedra</small></li>
+                <li><b>Stone Oven</b><small>Assados</small></li>
+                <li><b>Food Preparation Table</b><small>Preparo de alimentos</small></li>
+              </ul>
+            </article>
+
+            <article class="reward-group reward-equipment">
+              <header><span>03</span><div><h3>EQUIPAMENTOS COLETIVOS</h3><p>Ferramentas de coordenação, cerco e sobrevivência.</p></div></header>
+              <ul class="reward-items">
+                <li><b>Cartography Table</b><small>Inteligência territorial</small></li>
+                <li><b>Battering Ram</b><small>Equipamento de cerco</small></li>
+                <li><b>Catapult</b><small>Equipamento de cerco</small></li>
+                <li><b>Shield Generator</b><small>Proteção coletiva</small></li>
+              </ul>
+            </article>
+          </div>
+
+          <footer class="reward-note">
+            <span><b>20</b> escolhas de projeto</span>
+            <p><b>Workbench é livre</b> e não consome recompensa. Mesas e equipamentos atribuídos a uma profissão permanecem sob o monopólio daquele ofício.</p>
+            <small>Fonte operacional: aba Crafting &amp; Misc · itens marcados “projeto”.</small>
+          </footer>
+        </section>
+        <div class="rule-strip">
+          <span><b>CRAFT LIVRE</b> sem bancada</span>
+          <span><b>EXCEÇÃO</b> ferramentas são do Ferreiro</span>
+          <span><b>AJUDANTES</b> até dois por convite</span>
+          <span><b>MONOPÓLIO</b> não é transferido</span>
+          <span><b>NAVIOS</b> Madeira possui, Errante comanda</span>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="catalog-data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
